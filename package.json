@@ -1,0 +1,30 @@
+{
+  "name": "pm2-js-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "probe.js",
+  "apps": [
+    {
+      "name": "pm2-js-cluster",
+      "script": "app.js"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briancsparks/pm2-js-cluster.git"
+  },
+  "author": "Brian C Sparks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briancsparks/pm2-js-cluster/issues"
+  },
+  "homepage": "https://github.com/briancsparks/pm2-js-cluster#readme",
+  "dependencies": {
+    "ain2": "^2.0.0",
+    "pm2": "^2.6.1",
+    "pmx": "^1.2.0"
+  }
+}
