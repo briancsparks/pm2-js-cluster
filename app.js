@@ -8,7 +8,7 @@ var pm2                       = require('pm2');
 var SysLogger                 = require('ain2');
 
 // The 'ain2' logging object
-var logger    = new SysLogger({tag: 'JSCLUSTER',  facility: 'local7'});
+var logger    = new SysLogger({tag: 'JSCLUSTER',  facility: 'local7', address: process.env.SERVERASSIST_UTIL_IP, port: 10698});
 
 
 var conf      = pmx.initModule({}, function(err, conf) {
