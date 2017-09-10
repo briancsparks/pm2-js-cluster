@@ -8,9 +8,9 @@ var pmx                       = require('pmx');
 var pm2                       = require('pm2');
 var SysLogger                 = require('ain2');
 
-var color                     = process.env.SERVERASSIST_COLOR;
-var stack                     = process.env.SERVERASSIST_STACK;
-var service                   = process.env.SERVERASSIST_SERVICE;
+var color                     = process.env.SERVERASSIST_COLOR    || process.env.MARIO_COLOR;
+var stack                     = process.env.SERVERASSIST_STACK    || process.env.MARIO_STACK;
+var service                   = process.env.SERVERASSIST_SERVICE  || process.env.MARIO_SERVICE;
 
 var tag                       = _.compact(['jsc', color, stack, service]).join('_');
 
@@ -18,7 +18,7 @@ var tag                       = _.compact(['jsc', color, stack, service]).join('
 // configuration for logging
 var logConfig = {
   facility      : 'local7',
-  address       : process.env.SERVERASSIST_UTIL_IP,
+  address       : process.env.SERVERASSIST_UTIL_IP    || process.env.MARIO_UTIL_IP,
   port          : 10698
 };
 
